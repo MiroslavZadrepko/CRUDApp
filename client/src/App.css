@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form,
+.listDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.form input {
+  width: 25vw;
+  height: 5vh;
+  font-size: 16px;
+  padding-left: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listDiv input {
+  width: 48.5vw;
+  height: 5vh;
+  font-size: 16px;
+  padding-left: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.form label {
+  margin-top: 1vh;
+}
+
+.form button {
+  margin-top: 2vh;
+  width: 26.5vw;
+  height: 5vh;
+  font-size: 16px;
+
+}
+
+.oneContact {
+  justify-content: center;
+  border: 1px solid black;
+  width: 50vw;
+  margin: auto;
+}
