@@ -46,8 +46,40 @@
 }
 
 .oneContact {
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
   border: 1px solid black;
-  width: 50vw;
+  width: 66vw;
   margin: auto;
 }
+
+.oneContact p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.oneContactBtn {
+  display: flex;
+  flex-direction: column;  
+  margin:auto;
+  
+}
+
+.oneContactEdit {
+  display: flex;
+  flex-direction: column;  
+  margin:auto;
+  margin-top: 3vh;
+  justify-content: center;
+}
+
+.oneContactEdit button {
+  margin-top: 1vh;
+}
+
+.oneContactEdit input {
+  margin-top: 3.5vh;
+  width: 15vw;
+}
+

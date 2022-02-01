@@ -13,7 +13,6 @@ function App() {
   useEffect(() => {
     getAllContacts().then(res => {
       setAllContacts(res.data);
-      console.log(res.data);
     })
   },[])
 

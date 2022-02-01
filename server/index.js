@@ -47,10 +47,71 @@ app.get("/contacts", (req, res) => {
     )
 })
 
-app.put("/update", (req,res) => {
+app.put("/updatename", (req,res) => {
     const id = req.body.id
+    const name = req.body.name 
+
     db.query(
-        "UPDATE contacts SET  "
+        "UPDATE contacts SET name = ? WHERE id = ?", 
+        [name, id],
+        (err, resault) => {
+            if(err) {
+                console.log(err);
+            } else {
+                res.send(resault)
+            }
+        }
+    )
+})
+
+app.put("/updatelastname", (req,res) => {
+    const id = req.body.id
+    const lastName = req.body.last_name 
+
+    db.query(
+        "UPDATE contacts SET last_name = ? WHERE id = ?", 
+        [lastName, id],
+        (err, resault) => {
+            if(err) {
+                console.log(err);
+            } else {
+                res.send(resault)
+            }
+        }
+    )
+})
+
+app.put("/updateaddress", (req,res) => {
+    const id = req.body.id
+    const address = req.body.address 
+
+    db.query(
+        "UPDATE contacts SET address = ? WHERE id = ?", 
+        [address, id],
+        (err, resault) => {
+            if(err) {
+                console.log(err);
+            } else {
+                res.send(resault)
+            }
+        }
+    )
+})
+
+app.put("/updatephonenumber", (req,res) => {
+    const id = req.body.id
+    const phonenumber = req.body.phonenumber 
+
+    db.query(
+        "UPDATE contacts SET phonenumber = ? WHERE id = ?", 
+        [phonenumber, id],
+        (err, resault) => {
+            if(err) {
+                console.log(err);
+            } else {
+                res.send(resault)
+            }
+        }
     )
 })
 
