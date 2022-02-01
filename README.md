@@ -2,7 +2,7 @@
 Simple phonebook app. 
 
 # Dependencies:
-node, react, axios, body-parser, cors, express, mysql2, nodemon (optionall)
+node, react, react-csv, axios, body-parser, cors, express, mysql2, nodemon (optionall)
 MySQL, MySQL Workbench
 
 # Done:
