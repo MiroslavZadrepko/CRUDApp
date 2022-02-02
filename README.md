@@ -3,7 +3,7 @@ Simple phonebook app.
 As name suggest, user can create, read, update and delete contact. Each contact can be exported to .csv file.
 
 # Dependencies, tech and software used:
-node, npm, react, react-csv, axios, body-parser, cors, express, mysql2, nodemon (optionall)
+node, npm, react, react-csv, axios, body-parser, cors, express, multer, mysql2, nodemon (optionall)
 MySQL, MySQL Workbench
 
 # How to use:
