@@ -9,6 +9,7 @@ MySQL, MySQL Workbench
 # How to use:
 Clone repository to your PC.
 Open /phonebook folder in VS Code, go to /server and in terminal type ```npm install``` and then start server with ```node index.js```. 
+You will need to create datatable "contacts" manualy, with colums id int AI PK, name tinytext, last_name tinytext, address varchar(100), phonenumber varchar(12) and avatar_location. At least, that's how I done it with MySQL Workbench. 
 Open new terminal and go to /client, do ```npm install``` and ```npm start```.
 
 # Done:
