@@ -20,6 +20,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
+}
+.form .inputImg {
+  border: none;
+padding-left: 5vw;
 }
 
 .listDiv input {
@@ -34,7 +39,8 @@
 }
 
 .form label {
-  margin-top: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 
 .form button {
@@ -42,36 +48,37 @@
   width: 26.5vw;
   height: 5vh;
   font-size: 16px;
-
 }
 
 .oneContact {
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 15px;
   width: 66vw;
   margin: auto;
+  margin-top: 3vh;
 }
 
 .oneContact p {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin-left: 2vw;
 }
 
 .oneContactBtn {
   display: flex;
   flex-direction: column;  
   margin:auto;
-  
 }
 
 .oneContactEdit {
   display: flex;
   flex-direction: column;  
-  margin:auto;
+  margin-right:2vw;
   margin-top: 3vh;
-  justify-content: center;
+  
 }
 
 .oneContactEdit button {

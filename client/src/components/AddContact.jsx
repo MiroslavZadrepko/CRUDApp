@@ -16,6 +16,27 @@ const AddContact = () => {
         }); 
     }
     
+    const handleFileRead = async (e) => {
+        const file = e.target.files[0]
+        const base64 = await convertBase64(file)
+        const base64result = base64.split(',')[1];
+        setAddImage(base64result)
+        console.log(base64result);
+      }
+
+      const convertBase64 = (file) => {
+        return new Promise((resolve, reject) => {
+          const fileReader = new FileReader();
+          fileReader.readAsDataURL(file)
+          fileReader.onload = () => {
+            resolve(fileReader.result);
+          }
+          fileReader.onerror = (error) => {
+            reject(error);
+          }
+        })
+      }
+
     return (
         <>
             <div >
@@ -41,12 +62,14 @@ const AddContact = () => {
                     }} />
 
                     <label >Upload image</label>
-                    <input type="text" onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }} onChange={(e) => {
-                        setAddImage(e.target.value)
+                    <input className='inputImg' type="file" onChange={(e) => {
+                        
+                        handleFileRead(e);
                     }} />
 
                     <button type="submit">Submit</button>
                 </form>
+               { }
 
             </div>
 

@@ -13,13 +13,15 @@ You will need to create datatable "contacts" manualy, with colums id int AI PK, 
 Open new terminal and go to /client, do ```npm install``` and ```npm start```.
 
 # Done:
-Create and add SQL db
-Read from db
-List on page
-Delete from page and db
-Export contact to CSV file
-Edit each or all values in contact
+Create and add SQL db.
+Read from db.
+List on page.
+Delete from page and db.
+Export contact to CSV file.
+Edit each or all values in contact.
 
 # To Do:
 Style
-Add avatar to sql
+
+# ChangeLog 
+03.02.2022, 12:39 Managed to add avatar to sql, and read it

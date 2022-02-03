@@ -33,25 +33,26 @@ const OneContact = ({ contact }) => {
     const updateContact = (selected, id, editedValue) => {
         switch (selected) {
             case 'name':
-                updateName(id, editedValue).then(res =>{window.location.reload(true);})
+                updateName(id, editedValue).then(res => { window.location.reload(true); })
                 return
 
             case 'last_name':
-                updateLastName(id, editedValue).then(res => {window.location.reload(true);})
+                updateLastName(id, editedValue).then(res => { window.location.reload(true); })
                 return
 
             case 'address':
-                updateAdress(id, editedValue).then(res=>{window.location.reload(true);})
+                updateAdress(id, editedValue).then(res => { window.location.reload(true); })
                 return
 
             case 'phonenumber':
-                updatePhonenumber(id, editedValue).then(res=>{window.location.reload(true);})
+                updatePhonenumber(id, editedValue).then(res => { window.location.reload(true); })
                 return
 
             default:
                 break;
         }
     }
+
 
     return (
         <div className='oneContact'>
@@ -60,6 +61,8 @@ const OneContact = ({ contact }) => {
                 <p>Last name: {contact.last_name}</p>
                 <p>Address: {contact.address}</p>
                 <p>Phonemnumber: {contact.phonenumber}</p>
+                {contact.avatar_location ? <img alt='' width='50' height='50' src={"data:image/*; base64," + contact.avatar_location} /> : ''}
+
             </div>
 
             <div className='oneContactBtn'>
@@ -80,11 +83,11 @@ const OneContact = ({ contact }) => {
                     <option value="name">Name</option>
                     <option value="last_name">Last name</option>
                     <option value="address">Address</option>
-                    <option value="phonenumber">Phonenumber</option>
+                    <option value="phonenumber">Phone number</option>
                 </select>
-                
-                <input onChange={(e) => { setEditedValue(e.target.value) }}></input>
-                
+
+                <input placeholder='select from dropdown' onChange={(e) => { setEditedValue(e.target.value) }}></input>
+
                 <button onClick={() => updateContact(selectedOption, contact.id, editedValue)} >Update contact</button>
 
             </div>
