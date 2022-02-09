@@ -1,6 +1,6 @@
 # CRUDApp:
 Simple phonebook app. 
-As name suggest, user can create, read, update and delete contact. Each contact can be exported to .csv file.
+As name suggest, user can create, read, update and delete contact and store to SQL db. Each contact can be exported to .csv file.
 
 # Dependencies, tech and software used:
 node, npm, react, react-csv, axios, body-parser, cors, express, multer, mysql2, nodemon (optionall)
